@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{183CF2EB-24E8-41F1-BF3C-0B46FA4CE4AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EmlakOto</RootNamespace>
+    <AssemblyName>EmlakOto</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AliciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AliciEkle.Designer.cs">
+      <DependentUpon>AliciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arsa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arsa.Designer.cs">
+      <DependentUpon>Arsa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArsaAliciVeBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArsaAliciVeBilgi.Designer.cs">
+      <DependentUpon>ArsaAliciVeBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArsaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArsaEkle.Designer.cs">
+      <DependentUpon>ArsaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KisiEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KisiEkle.Designer.cs">
+      <DependentUpon>KisiEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Konut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Konut.Designer.cs">
+      <DependentUpon>Konut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlBaglantisi.cs" />
+    <Compile Include="KonutEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KonutEkle.Designer.cs">
+      <DependentUpon>KonutEkle.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AliciEkle.resx">
+      <DependentUpon>AliciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arsa.resx">
+      <DependentUpon>Arsa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArsaAliciVeBilgi.resx">
+      <DependentUpon>ArsaAliciVeBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArsaEkle.resx">
+      <DependentUpon>ArsaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KisiEkle.resx">
+      <DependentUpon>KisiEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Konut.resx">
+      <DependentUpon>Konut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="KonutEkle.resx">
+      <DependentUpon>KonutEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
